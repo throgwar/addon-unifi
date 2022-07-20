@@ -16,10 +16,13 @@ map:
   - backup:rw
 ports:
   161/udp: null
+  1812/udp: 1812
+  1813/udp: 1813
   1900/udp: null
   3478/udp: 3478
   5514/udp: 5514
   6789/tcp: 6789
+  8022/tcp: 22
   8080/tcp: 8080
   8443/tcp: 8443
   8843/tcp: 8843
@@ -27,10 +30,13 @@ ports:
   10001/udp: 10001
 ports_description:
   161/udp: Used for SNMP Access
+  1812/udp: Used for Radius Authentication 
+  1813/udp: Used for Radius Accounting
   1900/udp: L2 discoverable port
   3478/udp: Used for STUN
   5514/udp: Used for remote syslog debugging
   6789/tcp: Used for UniFi mobile speed test
+  8022/tcp: Used for ssh to Unifi network application
   8080/tcp: Used for device and controller communication
   8443/tcp: Used for controller web interface and API
   8843/tcp: Used for HTTPS portal redirection
